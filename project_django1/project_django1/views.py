@@ -3,6 +3,7 @@ from django.shortcuts import render
 
 def about(request):
     return render(request,'about.html',{'gretting':'hello'})
-
+def reverse(request):
+    return render(request,'reverse.html')
 def home(request):
-    return HttpResponse('This is my home')
+    return render(request,'home.html')
